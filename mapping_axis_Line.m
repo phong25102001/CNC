@@ -1,5 +1,5 @@
-function [delta_x, delta_y] = mapping_axis(x_start, y_start, x_end, y_end, S)
-% [delta_x, delta_y] = mapping_axis(x_start, y_start, x_end, y_end, S)
+function [delta_x, delta_y] = mapping_axis_Line(x_start, y_start, x_end, y_end, S)
+% [delta_x, delta_y] = mapping_axis_Line(x_start, y_start, x_end, y_end, S)
 % Chiếu chuyển động lên các trục x và y 
 %   Input:  
 %           * x_start, y_start: Tọa độ điểm xuất phát của đoạn thẳng (mm, mm)

@@ -1,4 +1,4 @@
-function [vXY, S, t] = ADCBI_Duong_thang(x_start, y_start, x_end, y_end, A, D, Tipo, F)
+function [vXY, S, t] = ADCBI_and_rough_interpolation_Line(x_start, y_start, x_end, y_end, A, D, Tipo, F)
 % [vXY, S, t] = ADCBI_Duong_thang(x_start, y_start, x_end, y_end, A, D, Tipo, F)
 % Thực hiện tăng giảm tốc trước nội suy đối với đoạn thẳng
 %   Input:  
@@ -19,7 +19,7 @@ function [vXY, S, t] = ADCBI_Duong_thang(x_start, y_start, x_end, y_end, A, D, T
     
     % kiểm tra quỹ đạo normal hay short
     if (F^2/(2*A) + F^2/(2*D) >= L) % short block
-        F_comma = sqrt(2*L*D/(A+D));
+        F_comma = sqrt(2*L*A*D/(A+D));
         Ta = F_comma/A;
         Td = F_comma/D;
         Tc = 0;
