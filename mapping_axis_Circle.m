@@ -3,6 +3,7 @@ function [delta_x, delta_y] = mapping_axis_Circle(R, phi_start, phi)
 % Chiếu chuyển động lên các trục x và y 
 %   Input:  
 %           * R: Bán kính cung tròn
+%           * phi_start: góc bắt đầu của cung tròn nội suy
 %           * phi: Mảng các góc đặt cho cung tròn
 %   Output: 
 %           * delta_x: mảng các giá trị quãng đường di chuyển theo trục x(mm)

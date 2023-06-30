@@ -1,5 +1,5 @@
 function [vXY, S, t] = ADCBI_and_rough_interpolation_Line(x_start, y_start, x_end, y_end, A, D, Tipo, F)
-% [vXY, S, t] = ADCBI_Duong_thang(x_start, y_start, x_end, y_end, A, D, Tipo, F)
+% [vXY, S, t] = ADCBI_and_rough_interpolation_Line(x_start, y_start, x_end, y_end, A, D, Tipo, F)
 % Thực hiện tăng giảm tốc trước nội suy đối với đoạn thẳng
 %   Input:  
 %           * x_start, y_start: Tọa độ điểm xuất phát của đoạn thẳng (mm, mm)

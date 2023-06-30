@@ -13,8 +13,7 @@ function [w_ipo, delta_phi, t, phi_start] = ADCBI_and_rough_interpolation_Circle
 %           * w_ipo: Vector vận tốc góc đặt từng bước nội suy (rad/s)
 %           * delta_phi: Vector khoảng di chuyển của góc cho từng bước nội suy (rad)
 %           * t: Vector bước thời gian nội suy (s)
-%           * xC: Tọa độ Xcenter của tâm cung tròn
-%           * yC: Tọa độ Ycenter của tâm cung tròn
+%           * phi_start: Góc xuất phát của cung tròn nội suy
     
     % mã hóa chiều quay
     dir = 0;
