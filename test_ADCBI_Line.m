@@ -1,4 +1,4 @@
-% Test Line
+% Test ADCBI Line
 
 clear;
 x_start = 0; 
@@ -12,9 +12,9 @@ F = 20;
 
 [vXY, S, t] = ADCBI_and_rough_interpolation_Line(x_start, y_start, x_end, y_end, A, D, Tipo, F);
 
-[rough_delta_x, rough_delta_y] = mapping_axis_Line(x_start, y_start, x_end, y_end, S);
+[rough_delta_x, rough_delta_y] = ADCBI_mapping_axis_Line(x_start, y_start, x_end, y_end, S);
 
-[fine_delta_x, fine_delta_y] = fine_interpolation(rough_delta_x, rough_delta_y, Tipo, Tpos, "average");
+[fine_delta_x, fine_delta_y, t] = fine_interpolation(rough_delta_x, rough_delta_y, Tipo, Tpos, "average");
 
 [xSP, ySP] = calculate_SP(x_start, y_start, fine_delta_x, fine_delta_y);
 

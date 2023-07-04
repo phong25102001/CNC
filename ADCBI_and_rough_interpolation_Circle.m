@@ -1,19 +1,19 @@
 function [w_ipo, delta_phi, t, phi_start] = ADCBI_and_rough_interpolation_Circle(x_start, y_start, x_end, y_end, R, direction, A, D, Tipo, F)
 % [w_ipo, delta_phi, t, phi_start] = ADCBI_and_rough_interpolation_Circle(x_start, y_start, x_end, y_end, R, direction, A, D, Tipo, F)
-% Thực hiện tăng giảm tốc trước nội suy đối với cung tròn
+% Thực hiện tăng giảm tốc trước nội suy và nội suy thô góc di chuyển đối với cung tròn
 %   Input:  
-%           * x_start, y_start: Tọa độ điểm xuất phát của đoạn thẳng (mm, mm)
-%           * x_end, y_end: Tọa độ điểm kết thúc của đoạn thẳng (mm, mm)
-%           * R: Bán kính cung tròn (> 0 => cung nhỏ; < 0 => cung lớn) (mm)
+%           * x_start, y_start: Tọa độ điểm xuất phát của cung (mm, mm)
+%           * x_end, y_end: Tọa độ điểm kết thúc của cung (mm, mm)
+%           * R: Bán kính cung tròn (R > 0 => cung nhỏ; R < 0 => cung lớn) (mm)
 %           * direction: hướng đi của cung ("CW" => cùng chiều kim đồng hồ , "CCW" => ngược chiều kim đồng hồ)
 %           * A, D: Gia tốc tăng giảm tốc tương ứng (mm/s^2)
 %           * Tipo: Thời gian bước nội suy (s)
 %           * F: Tốc độ ăn dao (m/s)
 %   Output: 
-%           * w_ipo: Vector vận tốc góc đặt từng bước nội suy (rad/s)
-%           * delta_phi: Vector khoảng di chuyển của góc cho từng bước nội suy (rad)
-%           * t: Vector bước thời gian nội suy (s)
-%           * phi_start: Góc xuất phát của cung tròn nội suy
+%           * w_ipo: Mảng vận tốc góc đặt từng bước nội suy (rad/s)
+%           * delta_phi: Mảng khoảng di chuyển của góc cho từng bước nội suy thô (rad)
+%           * t: Mảng các thời điểm nội suy (s)
+%           * phi_start: Góc xuất phát của cung tròn nội suy so với trục x+
     
     % mã hóa chiều quay
     dir = 0;
@@ -89,12 +89,13 @@ function [w_ipo, delta_phi, t, phi_start] = ADCBI_and_rough_interpolation_Circle
 
          end    
         
-        if i < Na+Nd+Nc
+        if i < Na+Nd+Nc % các thời điểm nội suy
             t(i+1) = t(i) + Tipo; 
         end
         
     end
 
+    % tính toán bù trừ phần thiếu của góc quét
     phi_rem = (-dir)*cAngle-sum(delta_phi);
     delta_phi = delta_phi+phi_rem/(Na+Nc+Nd);
 

@@ -1,17 +1,18 @@
 function [vXY, S, t] = ADCBI_and_rough_interpolation_Line(x_start, y_start, x_end, y_end, A, D, Tipo, F)
 % [vXY, S, t] = ADCBI_and_rough_interpolation_Line(x_start, y_start, x_end, y_end, A, D, Tipo, F)
-% Thực hiện tăng giảm tốc trước nội suy đối với đoạn thẳng
+% Thực hiện tăng giảm tốc trước nội suy và nội suy thô đoạn di chuyển đối với đoạn thẳng
 %   Input:  
 %           * x_start, y_start: Tọa độ điểm xuất phát của đoạn thẳng (mm, mm)
 %           * x_end, y_end: Tọa độ điểm kết thúc của đoạn thẳng (mm, mm)
-%           * A, D: Gia tốc tăng giảm tốc tương ứng (mm/s^2)
+%           * A, D: Gia tốc tăng giảm tốc tương ứng (mm/s^2, mm/s^2)
 %           * Tipo: Thời gian bước nội suy (s)
 %           * F: Tốc độ ăn dao (mm/s)
 %   Output: 
-%           * vXY: Vector vận tốc đặt từng bước nội suy (mm/s)
-%           * S: Vector vị trí đặt cho từng bước nội suy (mm)
-%           * t: Vector bước thời gian nội suy (s)
+%           * vXY: Mảng vận tốc đặt từng bước nội suy (mm/s)
+%           * S: Mảng các đoạn di chuyển cho từng bước nội suy (mm)
+%           * t: Mảng các thời điểm nội suy (s)
 
+    % tính toán độ dài đoạn thẳng và khởi tạo các giá trị đầu
     L = sqrt((x_end-x_start)^2 + (y_end-y_start)^2);
     vXY(1) = 0;
     t(1) = 0;
@@ -49,14 +50,17 @@ function [vXY, S, t] = ADCBI_and_rough_interpolation_Line(x_start, y_start, x_en
             vXY(i+1) = vXY(i)-Tipo*D;
             S(i+1) = Tipo*(vXY(i+1)+vXY(i))/2; 
 
-         end    
-        
+        end    
+
+
+        % tính toán các thời điểm nội suy
         if i < Na+Nd+Nc
             t(i+1) = t(i) + Tipo; 
         end
         
     end
 
+    % Bù phần thiếu của đoạn thẳng cho từng bước nội suy
     Srem = L-sum(S);
     S = S+Srem/(Na+Nc+Nd);
 
