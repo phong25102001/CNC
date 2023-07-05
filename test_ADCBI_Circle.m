@@ -6,7 +6,7 @@ y_start = 0;
 x_end = 20;
 y_end = 50;
 R = 40;
-direction = "CCW";
+direction = "CW";
 A = 10; D = 10;
 Tipo = 0.005;
 Tpos = 0.001;

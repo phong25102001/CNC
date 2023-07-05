@@ -26,9 +26,9 @@ function [w_ipo, delta_phi, t, phi_start] = ADCBI_and_rough_interpolation_Circle
     end
 
     % quy đổi vận tốc gia tốc về đơn vị góc
-    beta_A = A/R;
-    beta_D = D/R;
-    W = F/R;
+    beta_A = A/abs(R);
+    beta_D = D/abs(R);
+    W = F/abs(R);
     
     % tìm trung điểm của điểm đầu và điểm cuối
     xM = (x_end+x_start)/2;
@@ -52,7 +52,7 @@ function [w_ipo, delta_phi, t, phi_start] = ADCBI_and_rough_interpolation_Circle
     
     % kiểm tra quỹ đạo normal hay short
     if (W^2/(2*beta_A) + W^2/(2*beta_D) >= cAngle) % short block
-        W_comma = sqrt(2*cAngle*beta_D*beta_D/(beta_A+beta_D));
+        W_comma = sqrt(2*cAngle*beta_A*beta_D/(beta_A+beta_D));
         Ta = W_comma/beta_A;
         Td = W_comma/beta_D;
         Tc = 0;
