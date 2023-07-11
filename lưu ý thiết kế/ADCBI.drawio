@@ -1,0 +1,130 @@
+<mxfile host="app.diagrams.net" modified="2023-07-11T17:17:09.246Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.67" etag="7syDGSX6GFvG9WCIE_dD" version="21.6.1" type="device">
+  <diagram name="Page-1" id="JaXyIufD15eB2DRpuns7">
+    <mxGraphModel dx="1101" dy="547" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="dDiuxaQRGteQ3DoL64YA-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="dDiuxaQRGteQ3DoL64YA-1" target="dDiuxaQRGteQ3DoL64YA-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dDiuxaQRGteQ3DoL64YA-1" value="START" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="350" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="dDiuxaQRGteQ3DoL64YA-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="dDiuxaQRGteQ3DoL64YA-2" target="dDiuxaQRGteQ3DoL64YA-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dDiuxaQRGteQ3DoL64YA-2" value="x_start, y_start, x_end, y_end, A, D, Tipo, F" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;size=10;" vertex="1" parent="1">
+          <mxGeometry x="180" y="430" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dDiuxaQRGteQ3DoL64YA-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="dDiuxaQRGteQ3DoL64YA-3" target="dDiuxaQRGteQ3DoL64YA-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dDiuxaQRGteQ3DoL64YA-3" value="Tính toán độ dài L,&lt;br&gt;khởi tạo các giá trị&lt;br&gt;vXY(1) = t(1) = S(1) = 0" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="185" y="515" width="130" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="dDiuxaQRGteQ3DoL64YA-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="dDiuxaQRGteQ3DoL64YA-4" target="dDiuxaQRGteQ3DoL64YA-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dDiuxaQRGteQ3DoL64YA-4" value="Kiểm tra quỹ đạo là normal hay short block và tính toán thời gian tăng/giảm tốc và chạy đều: Ta, Td, Tc&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="165" y="610" width="170" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="dDiuxaQRGteQ3DoL64YA-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="dDiuxaQRGteQ3DoL64YA-5" target="dDiuxaQRGteQ3DoL64YA-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dDiuxaQRGteQ3DoL64YA-5" value="Tính toán số điểm tăng, giảm tốc và chạy đều: Na, Nd, Nc" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="710" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dDiuxaQRGteQ3DoL64YA-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="dDiuxaQRGteQ3DoL64YA-6" target="dDiuxaQRGteQ3DoL64YA-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dDiuxaQRGteQ3DoL64YA-6" value="Thực hiện tăng giảm tốc, tính các giá trị&lt;br&gt;vXY(i), S(i), t(i)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="390" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dDiuxaQRGteQ3DoL64YA-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="dDiuxaQRGteQ3DoL64YA-7" target="dDiuxaQRGteQ3DoL64YA-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dDiuxaQRGteQ3DoL64YA-7" value="xuất các mảng &lt;br&gt;vXY, S, t&lt;br&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="580" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dDiuxaQRGteQ3DoL64YA-8" value="END" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="670" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="dDiuxaQRGteQ3DoL64YA-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="dDiuxaQRGteQ3DoL64YA-10" target="dDiuxaQRGteQ3DoL64YA-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dDiuxaQRGteQ3DoL64YA-10" value="Bù phần thiếu của đoạn thẳng ở bước cuối vào từng bước nội suy" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dDiuxaQRGteQ3DoL64YA-18" value="ADCBI_and_rough_interpolation_Line" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="230" y="310" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dDiuxaQRGteQ3DoL64YA-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="dDiuxaQRGteQ3DoL64YA-20" target="dDiuxaQRGteQ3DoL64YA-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dDiuxaQRGteQ3DoL64YA-20" value="START" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="986" y="360" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="dDiuxaQRGteQ3DoL64YA-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="dDiuxaQRGteQ3DoL64YA-22" target="dDiuxaQRGteQ3DoL64YA-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dDiuxaQRGteQ3DoL64YA-22" value="x_start, y_start, x_end, y_end, R, direction, &lt;br&gt;A, D, Tipo, F" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;size=10;" vertex="1" parent="1">
+          <mxGeometry x="976" y="440" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dDiuxaQRGteQ3DoL64YA-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="dDiuxaQRGteQ3DoL64YA-24" target="dDiuxaQRGteQ3DoL64YA-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dDiuxaQRGteQ3DoL64YA-24" value="Mã hóa chiều quay dir và quy đổi các thông số về đơn vị góc beta_A, beta_D, W" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="981" y="525" width="130" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="dDiuxaQRGteQ3DoL64YA-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="dDiuxaQRGteQ3DoL64YA-26" target="dDiuxaQRGteQ3DoL64YA-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dDiuxaQRGteQ3DoL64YA-26" value="Tìm tâm cung tròn, góc xuất phát và góc phải quét&lt;br&gt;(xC, yC); phi_start; cAngle" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="961" y="620" width="170" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="dDiuxaQRGteQ3DoL64YA-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="dDiuxaQRGteQ3DoL64YA-28" target="dDiuxaQRGteQ3DoL64YA-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dDiuxaQRGteQ3DoL64YA-28" value="Kiểm tra quỹ đạo là normal hay short block và tính toán thời gian tăng/giảm tốc và chạy đều: Ta, Td, Tc" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="966" y="720" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dDiuxaQRGteQ3DoL64YA-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="dDiuxaQRGteQ3DoL64YA-30" target="dDiuxaQRGteQ3DoL64YA-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dDiuxaQRGteQ3DoL64YA-30" value="Tính toán số điểm tăng/giảm tốc và chạy đều Na, Nd, Nc" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1266" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dDiuxaQRGteQ3DoL64YA-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="dDiuxaQRGteQ3DoL64YA-35" target="dDiuxaQRGteQ3DoL64YA-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dDiuxaQRGteQ3DoL64YA-35" value="Khởi tạo các giá trị ban đầu&amp;nbsp;&lt;br&gt;w_ipo(1) = delta_phi(1) = t(1) = 0&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1241.5" y="486" width="169" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="dDiuxaQRGteQ3DoL64YA-36" value="ADCBI_and_rough_interpolation_Circle" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1026" y="320" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dDiuxaQRGteQ3DoL64YA-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="dDiuxaQRGteQ3DoL64YA-37" target="dDiuxaQRGteQ3DoL64YA-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dDiuxaQRGteQ3DoL64YA-37" value="Thực hiện tính toán tốc độ góc,&amp;nbsp; khoảng góc và thời điểm từng bước nội suy: w_ipo(i), delta_phi(i), t(i)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1241.5" y="580" width="169" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="dDiuxaQRGteQ3DoL64YA-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="dDiuxaQRGteQ3DoL64YA-39" target="dDiuxaQRGteQ3DoL64YA-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dDiuxaQRGteQ3DoL64YA-39" value="Bù trừ khoảng thiếu của góc vào từng chu kì nội suy" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1241.5" y="670" width="169" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="dDiuxaQRGteQ3DoL64YA-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="dDiuxaQRGteQ3DoL64YA-41" target="dDiuxaQRGteQ3DoL64YA-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dDiuxaQRGteQ3DoL64YA-41" value="xuất các mảng&amp;nbsp;&lt;br&gt;w_ipo, delta_phi, t&lt;br&gt;và giá trị phi_start" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="1253.5" y="760" width="145" height="59" as="geometry" />
+        </mxCell>
+        <mxCell id="dDiuxaQRGteQ3DoL64YA-43" value="END" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1266" y="845" width="120" height="39" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -11,7 +11,7 @@ function [fine_deltaX, fine_deltaY, t] = fine_interpolation(rough_deltaX,rough_d
 %           * t: Mảng các giá trị thời điểm nội suy tinh cho fine_deltaX và finedeltaY (s, s)
 
     % tính toán số điểm nội suy tinh cho từng bước nội suy thô và khởi tạo thời gian gốc
-    N = Tipo/Tpos;
+    N = floor(Tipo/Tpos);
     t(1) = 0;
     
 
