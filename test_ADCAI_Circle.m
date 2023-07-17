@@ -3,10 +3,10 @@
 clear;
 x_start = 0; 
 y_start = 0;
-x_end = 20;
-y_end = 50;
-R = 40;
-direction = "CCW";
+x_end = 40;
+y_end = 40;
+R = -40;
+direction = "CW";
 AD = 10;
 Tipo = 0.005;
 Tpos = 0.001;
